@@ -1,0 +1,50 @@
+<head>
+  <title>fileuploads</title>
+</head>
+
+<body>
+	<h1>Welcome to Meteor!</h1>
+		{{> loginButtons}}
+		{{> hello}}
+</body>
+
+<template name="hello">
+	<a class="gb_3a" data-toggle="modal" data-target="#modalProfileIcon">
+	<div class="gb_Ma" title="Profile Icon">
+		{{#if currentUser}}
+			<img alt="" src="/upload/{{currentUser.profile.profileImage}}" style="width:96px;height:96px;">
+		{{/if}}
+	</div>
+	<span>Change</span>
+	</a>
+	<div id="modalProfileIcon" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+	<!-- Modal content-->
+		<div class="modal-content">
+			<div class="uplodLoading" style="display:none;"><img src="img/app/loaders/30.GIF"></div>  
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Select profile photo</h4>
+			</div>
+			<div class="modal-body">
+			<!--<div id="kv-avatar-errors" class="center-block" style="width:100%;display:none"></div>
+			<div class="kv-avatar center-block" style="width:200px">
+				<input id="file-1" name="avatar" type="file" class="file-loading">
+			</div>-->
+				<div id="changeProfileFocus" class="profile-img-container">
+					<img id="changeProfile" alt="" src="../img/app/avatars/avatar3.jpg" class="img-thumbnail img-responsive">
+					<div class="profile-img-i-container cooseFile" title="Select a photo from your computer">
+						<i class="fa fa-folder-open-o fa-3x"></i>
+					</div>
+					<input type="file" id="my_file" style="display: none;" /> 
+				</div>
+			</div>
+			<div class="modal-footer">
+				<span id="profileChangeMsg" style="color: green;float: left;font-size: large;display:none;">Profile Change Successfully</span>
+				<button id="btnUpload" type="button" class="btn btn-primary" disabled>Set as profile photo</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+</template>

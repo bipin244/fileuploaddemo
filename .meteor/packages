@@ -1,0 +1,62 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# Packages from the release:
+standard-minifiers
+http
+jquery-waypoints
+accounts-twitter
+service-configuration
+oauth1
+launch-screen
+
+# Packages from Atmosphere:
+tmeasday:publish-counts@0.3.1
+mdg:geolocation
+meteor-base
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+meteor-platform
+mrt:tabs
+momentjs:moment
+mrt:jquery-ui
+rajit:bootstrap3-datepicker
+sergeyt:typeahead
+mrt:paginator
+blaze
+reactive-var
+accounts-base
+accounts-password
+accounts-ui
+underscore
+alanning:roles
+tsega:bootstrap3-datetimepicker
+dburles:google-maps
+mizzao:jquery-ui
+maazalik:highcharts
+aldeed:autoform
+aldeed:collection2
+jspdf:autotable
+forwarder:autoform-wizard
+nkonnectinfo:nkgrid@0.1.7
+remcoder:chronos
+meteorhacks:async
+less
+twbs:bootstrap
+semantic:ui-button
+semantic:ui-popup
+semantic:ui-transition
+tomi:upload-server
+aldeed:template-extension
+thinksoftware:image-resize-client
